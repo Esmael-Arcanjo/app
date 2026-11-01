@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 48 20% 97%;
+    --foreground: 222 30% 8%;
+    --surface: 45 16% 95%;
+    --sidebar: 0 0% 100%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 30% 8%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 30% 8%;
+    --primary: 156 72% 32%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 45 14% 91%;
+    --secondary-foreground: 222 30% 10%;
+    --muted: 45 12% 92%;
+    --muted-foreground: 222 10% 40%;
+    --accent: 38 92% 52%;
+    --accent-foreground: 222 30% 8%;
+    --destructive: 0 72% 48%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 152 60% 36%;
+    --warning: 38 92% 50%;
+    --border: 40 12% 86%;
+    --input: 40 12% 84%;
+    --ring: 156 72% 32%;
+    --radius: 0.75rem;
+    --chart-1: 156 72% 32%;
+    --chart-2: 38 92% 52%;
+    --chart-3: 222 47% 30%;
+    --chart-4: 0 72% 55%;
+    --chart-5: 200 70% 45%;
+  }
+  * { @apply border-border; }
+  html, body, #root { width: 100%; min-height: 100vh; }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+  ::selection { background: hsl(var(--primary) / 0.2); }
+  :focus-visible { outline: 2px solid hsl(var(--ring)); outline-offset: 2px; }
+}
+
+@layer utilities {
+  .grain { background-image: radial-gradient(hsl(var(--foreground) / 0.06) 1px, transparent 1px); background-size: 3px 3px; }
+  .fade-up { animation: fadeUp .5s cubic-bezier(.16,1,.3,1) both; }
+}
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }

@@ -29,7 +29,6 @@ colorama==0.4.4
 cryptography==49.0.0
 dbus-python==1.2.18
 distro==1.7.0
-distro-info==1.1+ubuntu0.2
 Django==5.2.17
 django-cors-headers==4.9.0
 dnspython==2.8.0

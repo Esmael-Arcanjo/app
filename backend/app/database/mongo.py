@@ -1,6 +1,8 @@
-from pymongo import AsyncMongoClient
+
+
+from motor.motor_asyncio import AsyncIOMotorClient
 
 from app.core.config.settings import settings
 
-client: AsyncMongoClient = AsyncMongoClient(settings.mongo_url, tz_aware=True)
+client: AsyncIOMotorClient = AsyncIOMotorClient(settings.mongo_url, tz_aware=True)
 db = client[settings.db_name]

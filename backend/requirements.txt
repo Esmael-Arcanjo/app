@@ -189,6 +189,5 @@ websockets==16.1.1
 xdg==5
 yarl==1.24.5
 zipp==1.0.0
-zorin-appearance==5.3
 zorin-connect==1.2
 zorin-exec-guard==1.5

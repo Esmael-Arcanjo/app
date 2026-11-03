@@ -179,7 +179,6 @@ typer==0.26.8
 typing-inspection==0.4.2
 typing_extensions==4.15.0
 tzdata==2026.2
-ufw==0.36.1
 unattended-upgrades==0.1
 uritemplate==4.2.0
 urllib3==1.26.5

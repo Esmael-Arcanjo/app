@@ -5,3 +5,4 @@ pydantic-settings
 requests
 python-dotenv
 gunicorn
+pymongo

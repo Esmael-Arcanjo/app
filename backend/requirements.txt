@@ -1,8 +1,3 @@
-
-
-
-
-
 fastapi
 uvicorn
 pydantic
@@ -17,3 +12,5 @@ email-validator
 pyotp
 passlib
 bcrypt
+cryptography
+cryptography

@@ -14,3 +14,6 @@ passlib
 bcrypt
 cryptography
 argon2-cffi
+stripe
+cloudinary
+build

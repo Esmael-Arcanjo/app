@@ -13,4 +13,4 @@ pyotp
 passlib
 bcrypt
 cryptography
-cryptography
+argon2-cffi
